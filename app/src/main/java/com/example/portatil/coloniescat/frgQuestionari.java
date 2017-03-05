@@ -69,7 +69,8 @@ public class frgQuestionari extends Fragment {
         }
 
     }
-
+    //aqui instanciem el que es la nosttre llista carregada amb tota l'informacio que tenim sobre ells lloc
+    //a mes de mostrar les respostes del usuari si les ha donat
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

@@ -30,7 +30,7 @@ public class TalkerOH {
         baseDadesLlegir.close();
         baseDadesEscriure.close();
     }
-
+    //metode per carregar tot el contigngut que tenim a la base de dades
     public Cursor carregaTotaLaTaula() {
         // Retorem totes les tasques
         SQLiteDatabase baseDadesEscriure=bdAjudant.getWritableDatabase();
@@ -40,7 +40,7 @@ public class TalkerOH {
                 null, null, bdAjudant.COLUMN_ID);
     }
 
-    //metode per fer updates dels camps que deixem que es puguin cambiar mitjançant la PK de la row
+    //metode cridat desde els fragments que dona la possiblitat de resigtrar la resposta del usuari
     public void modificaResposta(long id, String resposta) {
         String respostaCorrecte;
         respostaCorrecte=carregarCodi(id);
@@ -57,7 +57,7 @@ public class TalkerOH {
         baseDadesEscriure.update(bdAjudant.TABLE_PRODUCTES,valors, bdAjudant.COLUMN_ID + " = ?", new String[] { String.valueOf(id) });
     }
 
-
+//memtode que compara la resposta del usuaari amb la resposta que ha donat el usuari per determinar si es coorrecte o no
     public String carregarCodi(long codi) {
 
         String respostaCorrecte="";

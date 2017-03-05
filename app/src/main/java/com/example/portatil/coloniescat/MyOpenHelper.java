@@ -42,6 +42,7 @@ public class MyOpenHelper extends SQLiteOpenHelper {
     }
     //en el on create genera la nova base de dades si es el primer cop, sino tindriem que mirar version actuals
     //y fer un upgrade de la base de dades
+    //a mes inserts de base per tal de tenir informacio en la propia base de dades
     @Override
     public void onCreate(SQLiteDatabase database) {
 

@@ -14,7 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-
+//implements de tots els fragments que tenim
 public class NavigationCat extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
         frgAjuntament.OnFragmentInteractionListener,
@@ -46,11 +46,12 @@ public class NavigationCat extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-
+        //Tracament dels fragmens per fer quan carregem l'activity que conte el navigation
+        //mostrem algun fragment de base
         boolean FragmentTransaction = false;
         Fragment fragment = null;
 
-
+            //nostre cas un mapa
             fragment = new frgMap();
             FragmentTransaction = true;
 
@@ -79,6 +80,9 @@ public class NavigationCat extends AppCompatActivity
         return true;
     }
 
+    /**metode que tenim de 3 punts del toolbar farem simplement
+     * tancarem la aplicacio i ja esta, per donarli alguna funcionalitat
+     **/
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -105,6 +109,8 @@ public class NavigationCat extends AppCompatActivity
         boolean FragmentTransaction = false;
         Fragment fragment = null;
 
+        //Tenim variables per fer el tracament dels fragments basicament busque la id que tenim en un menu del navigation
+        //i afegim el fragment al layout
         if (id == R.id.casaCaritat) {
             fragment = new frgCasaCaritat();
             FragmentTransaction = true;
@@ -134,7 +140,8 @@ public class NavigationCat extends AppCompatActivity
             fragment = new frgQuestionari();
             FragmentTransaction = true;
         }
-
+// a mes si tenim en try farem que el titol que tenim cambiarem el nom del toolbar perque aparegui el que nosaltres desitgem no del
+        //fragment
         if(FragmentTransaction){
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.content_navigation_cat, fragment)

@@ -3,7 +3,7 @@ package com.example.portatil.coloniescat;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
+//per fer una mica el friki simulem un carregan base de dades que nomses es un delay
 public class Loading extends AppCompatActivity {
 
     @Override
@@ -15,7 +15,7 @@ public class Loading extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    Thread.sleep(5000);
+                    Thread.sleep(3500);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

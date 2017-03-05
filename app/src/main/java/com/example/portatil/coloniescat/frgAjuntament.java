@@ -62,7 +62,8 @@ public class frgAjuntament extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
-
+    //a mes de instanciar el necesari farem les crides per registrar la resposta del usuari e enviarles a la base de dades
+    //per guardarles
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
