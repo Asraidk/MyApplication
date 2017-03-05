@@ -24,7 +24,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="206dp"
                     android:id="@+id/imageView3"
-                    app:srcCompat="@color/colorPrimary" />
+                    app:srcCompat="@drawable/teatre" />
 
             </LinearLayout>
 
@@ -36,19 +36,26 @@
                 android:weightSum="1">
 
                 <TextView
-                    android:text="TextView"
+                    android:text="Car/ Sant Abat 12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView5"
                     android:layout_weight="0.13" />
 
                 <TextView
-                    android:text="TextView"
+                    android:text="Espai teatral que esta en les dependencies de una parroquia"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView3"
                     android:layout_weight="0.13"
                     android:textSize="28dp"/>
+
+                <TextView
+                    android:text="Pregunta: Quina obra es dur a terme actualment?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView10"
+                    android:layout_weight="0.13" />
 
                 <EditText
                     android:layout_width="match_parent"

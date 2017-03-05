@@ -34,8 +34,9 @@
             <item android:title="Mapa"
                 android:id="@+id/map"
                 android:icon="@android:drawable/ic_menu_mapmode" />
-            <item android:title="Questionari"
-                android:id="@+id/questionari" />
+            <item android:title="Questionari resultats"
+                android:id="@+id/questionari"
+                android:icon="?android:attr/actionModePasteDrawable" />
         </menu>
     </item>
 

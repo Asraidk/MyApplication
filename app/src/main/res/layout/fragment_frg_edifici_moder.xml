@@ -24,7 +24,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="206dp"
                     android:id="@+id/imageView3"
-                    app:srcCompat="@color/colorPrimary" />
+                    app:srcCompat="@drawable/carrer" />
 
             </LinearLayout>
 
@@ -36,19 +36,26 @@
                 android:weightSum="1">
 
                 <TextView
-                    android:text="TextView"
+                    android:text="Carrer del carmen"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView5"
                     android:layout_weight="0.13" />
 
                 <TextView
-                    android:text="TextView"
+                    android:text="Dona una volta per el Carrer del carmen buscan edificis modernistes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView3"
                     android:layout_weight="0.13"
                     android:textSize="28dp"/>
+
+                <TextView
+                    android:text="Pregunta: Quines caracteristiques te un edifici modernista?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView11"
+                    android:layout_weight="0.13" />
 
                 <EditText
                     android:layout_width="match_parent"
