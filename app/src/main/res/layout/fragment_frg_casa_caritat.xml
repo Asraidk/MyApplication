@@ -24,7 +24,7 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="206dp"
-                    app:srcCompat="@mipmap/ic_launcher"
+                    app:srcCompat="@drawable/casacaritat"
                     android:id="@+id/imageView3" />
 
             </LinearLayout>
@@ -37,19 +37,26 @@
                 android:weightSum="1">
 
                 <TextView
-                    android:text="TextView"
+                    android:text="C/mont alegre 5-7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView5"
                     android:layout_weight="0.13" />
 
                 <TextView
-                    android:text="TextView"
+                    android:text="Centre de beneficencia entre 1802 i 1956, actualment es un centre cultura"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView3"
                     android:layout_weight="0.13"
                     android:textSize="28dp"/>
+
+                <TextView
+                    android:text="Pregunta: Busca la teva propia imatge al CCCB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4"
+                    android:layout_weight="0.13" />
 
                 <EditText
                     android:layout_width="match_parent"

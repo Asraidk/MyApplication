@@ -1,13 +1,80 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.portatil.coloniescat.frgCasaConvalecencia">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="206dp"
+                    android:id="@+id/imageView3"
+                    app:srcCompat="@drawable/casaconvalecencia" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layout1"
+                android:weightSum="1">
+
+                <TextView
+                    android:text="C/ del Carmen 47"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5"
+                    android:layout_weight="0.13" />
+
+                <TextView
+                    android:text="En on anavan els malats, per finalitzar la recuperacio. Avui en dia seu del IEC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:layout_weight="0.13"
+                    android:textSize="28dp"/>
+
+                <TextView
+                    android:text="Pregunta: Escriu les lletres que trobem a sota del escut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView7"
+                    android:layout_weight="0.13" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editResposta"
+                    android:layout_weight="0.13"
+                    android:hint="Resposta" />
+
+                <Button
+                    android:text="Guarda resposta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/resposta"
+                    android:layout_weight="0.13" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
 
 </FrameLayout>
