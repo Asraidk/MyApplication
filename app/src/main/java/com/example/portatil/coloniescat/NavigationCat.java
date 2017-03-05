@@ -86,8 +86,10 @@ public class NavigationCat extends AppCompatActivity
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+        //em programat un petit sentit al boto perque l'aplicacio es tanqui al clicar
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            finish();
             return true;
         }
 
