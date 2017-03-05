@@ -7,6 +7,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 
 /**
@@ -64,7 +67,34 @@ public class frgAjuntament extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_frg_ajuntament, container, false);
+        View view= inflater.inflate(R.layout.fragment_frg_ajuntament, container, false);
+        final EditText respostaUsuari = (EditText) view.findViewById(R.id.editResposta);
+
+        Button botoResposta = (Button) view.findViewById(R.id.resposta);
+
+        botoResposta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                try {
+                    TalkerOH bd=new TalkerOH(getContext());
+                    String contingutText;
+                    contingutText = respostaUsuari.getText().toString();
+                    bd.modificaResposta(6,contingutText);
+                    Toast toast ;
+                    toast =Toast.makeText(getContext(),"Resposta registrada si vols veure mes consulta el questionari en el menu", Toast.LENGTH_SHORT);
+                    toast.show();
+                }
+                catch (Exception e) {
+                    Toast toast ;
+                    toast =Toast.makeText(getContext(),"Ups alguna cosa no anat com esperavam", Toast.LENGTH_SHORT);
+                    toast.show();
+                    return;
+                }
+            }
+        });
+
+        return  view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

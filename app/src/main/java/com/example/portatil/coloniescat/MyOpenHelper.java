@@ -46,8 +46,13 @@ public class MyOpenHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase database) {
 
         database.execSQL(DATABASE_CREATE);
-        insertsBaseDades(database,"hola","hola","hola",0);
-        insertsBaseDades(database,"hola","hola","hola",1);
+        insertsBaseDades(database,"Busca la teva propia imatge al CCCB","Hi ha un mirall al sostre del vestibul","no reposta",0);
+        insertsBaseDades(database,"Quina funcio te actualment el convent dels Angels?","Museu i arxiu","no resposta",0);
+        insertsBaseDades(database,"Quina estil arquitectonic te l'esglesia?","Modernista","no resposta",0);
+        insertsBaseDades(database,"Escriu les lletres que trobem sota del escut","HVGVET","no resposta",0);
+        insertsBaseDades(database,"Quina obra es dur a terme acualment?","Magia junior","no resposta",0);
+        insertsBaseDades(database,"A mes del Raval quins mes barris componen la Barceloneta?","Gotic,Barceloneta,St Pere,Sta Caterina i la Ribera","no resposta",0);
+        insertsBaseDades(database,"Quines caracteristiques te un edifici modernista?","Innovacio","no resposta",0);
 
 
     }
